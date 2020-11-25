@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>MIMI CHEL</title>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body background="michel.gif">
-        
-        
-           <center>
-				<audio controls autoplay loop>
-				  <source src="leson.mp3" type="audio/mp3">
-				</audio>
-                </center>
-    </body>
-        </html>
+
+<head>
+    <title>MIMI CHEL</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body background="michel.gif">
+
+
+    <center>
+        <!-- Petit hack' pour forcer l'autorisation du son sur la page -->
+        <iframe src="silence.mp3" type="audio/mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+
+        <audio autoplay>
+            <source src="leson.mp3" type="audio/mp3">
+        </audio>
+    </center>
+
+</body>
+
+</html>
